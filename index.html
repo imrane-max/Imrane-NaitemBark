@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Imrane Naitembark — Web Developer | GameDev | Student</title>
+  <meta name="description" content="Portfolio of Imrane Naitembark, a young web and game developer from Morocco.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.16.0/devicon.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <!-- Navigation -->
+  <header class="nav">
+    <a class="brand" href="#home"><img src="assets/images/logo.png" alt="" width="40" height="40"><span>Imrane</span></a>
+    <nav id="menu" aria-label="Main navigation">
+      <a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-tools">
+      <a class="icon-btn" data-social="github" href="#contact" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a class="icon-btn" data-social="instagram" href="#contact" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a class="icon-btn" data-social="discord" href="#contact" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+      <button class="icon-btn theme-btn" id="theme" aria-label="Switch between light and dark theme"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i></button>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <span class="badge"><i class="dot"></i> Available for new projects</span>
+        <h1>Imrane <span class="blue">Naitembark</span></h1>
+        <p class="subtitle">Web Developer <b>|</b> <span class="cyan">GameDev</span> <b>|</b> <span class="blue">Student</span></p>
+        <p class="intro">I'm Imrane, an 11-year-old developer from Morocco <img class="flag" src="assets/icons/morocco-flag.svg" alt="Morocco flag" width="22" height="15">.<br>I love coding, Minecraft, and creating amazing things on the web! 🚀</p>
+        <div class="btn-row">
+          <a class="btn primary" href="#projects"><i class="fa-solid fa-code"></i> View My Projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="btn ghost" href="#contact"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+        </div>
+        <div class="socials">
+          <a class="round" data-social="github" href="#contact" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a class="round" data-social="instagram" href="#contact" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a class="round" data-social="discord" href="#contact" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+          <a class="round" data-social="website" href="#contact" aria-label="Personal website"><i class="fa-solid fa-globe"></i></a>
+        </div>
+      </div>
+      <div class="hero-art"><img src="assets/images/hero-character.png" alt="Minecraft-style character in a black hoodie with a glowing blue V logo and a neon ring"></div>
+    </section>
+
+    <div class="duo">
+      <!-- About -->
+      <section class="card about reveal" id="about">
+        <h2><i class="fa-solid fa-user blue"></i> About Me</h2>
+        <div class="about-body">
+          <div>
+            <p>Hello! I'm Imrane, a passionate developer from Morocco.<br>I enjoy programming, designing, and exploring new technologies like Python, Web Development, and GameDev.</p>
+            <p>My goal is to become a great developer and build innovative projects for the future! ⭐</p>
+            <a class="btn small ghost" href="#experience">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <img src="assets/images/morocco.png" alt="Map of Morocco in red with a blue city skyline">
+        </div>
+      </section>
+
+      <!-- Skills (rendered by js/script.js) -->
+      <section class="card reveal" id="skills">
+        <h2><i class="fa-solid fa-star blue"></i> My Skills</h2>
+        <ul class="skills" id="skill-grid"></ul>
+      </section>
+    </div>
+
+    <!-- Projects (rendered by js/script.js) -->
+    <section class="card reveal" id="projects">
+      <div class="head-row">
+        <h2><i class="fa-solid fa-rocket blue"></i> My Projects</h2>
+        <a class="btn small ghost" data-social="github" href="#contact">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="projects" id="project-grid"></div>
+    </section>
+
+    <!-- Experience: personal projects and learning only -->
+    <section class="card reveal" id="experience">
+      <h2><i class="fa-solid fa-route blue"></i> Experience</h2>
+      <p class="muted">Personal projects and self-directed learning.</p>
+      <ol class="timeline">
+        <li><h3>Personal development projects</h3><p>Building tools like a Minecraft launcher and a customizable search engine.</p></li>
+        <li><h3>Web development practice</h3><p>Learning HTML, CSS and JavaScript by building real pages, including this portfolio.</p></li>
+        <li><h3>Game development experiments</h3><p>Exploring Godot and Blender to make games and 3D art.</p></li>
+        <li><h3>Programming and technology learning</h3><p>Studying Python, Flask, Git and Docker, one project at a time.</p></li>
+      </ol>
+    </section>
+
+    <!-- Call-to-action banner -->
+    <section class="banner reveal" aria-label="Start a project">
+      <img src="assets/images/logo.png" alt="" width="72" height="72">
+      <div>
+        <h2>Have an idea? Let's build it together.</h2>
+        <p>Websites, games and tools: I love turning ideas into real projects.</p>
+      </div>
+      <a class="btn primary" href="#contact"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+    </section>
+
+    <!-- Contact -->
+    <section class="card contact reveal" id="contact">
+      <h2>Let's Connect</h2>
+      <p class="muted">Have an idea, a question or a project in mind? Send me a message.</p>
+      <div class="btn-row center">
+        <a class="btn primary" id="email-link" href="#contact"><i class="fa-solid fa-envelope"></i> Email me</a>
+        <a class="round" data-social="github" href="#contact" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a class="round" data-social="instagram" href="#contact" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a class="round" data-social="discord" href="#contact" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+      </div>
+      <a class="btn small ghost" href="#home"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Imrane Naitembark. All rights reserved.</p>
+    <div class="foot-right">
+      <a data-social="github" href="#contact" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a data-social="instagram" href="#contact" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a data-social="discord" href="#contact" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+      <span class="sep"></span><span>Keep Coding... 🚀</span>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="js/script.js"></script>
+</body>
+</html>
